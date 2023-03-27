@@ -212,7 +212,7 @@ ul:hover{
 .one{
     width: 60em;
     margin-left: 14em;
-    margin-top: -23em;
+    margin-top: -23em !important;
 }
 #feat{
     display: flex;
