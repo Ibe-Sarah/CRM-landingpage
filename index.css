@@ -112,7 +112,7 @@ ul:hover{
     border-bottom: 2px blue !important;
 }
 .head{
-    background: rgba(245, 246, 247, 0.8);
+    background: #FCFCFC;
     /* position: absolute; */
     height: 830.43px;
     width: 1512px;
@@ -212,7 +212,7 @@ ul:hover{
 .one{
     width: 60em;
     margin-left: 14em;
-    margin-top: -29em;
+    margin-top: -25em;
 }
 #feat{
     display: flex;
@@ -411,3 +411,23 @@ footer p{
     display: block;
     text-align: center;
 }
+@media (max-width: 768px) {
+    .navbar-brand{
+      margin-left: 5%;
+    }
+    ul{
+      margin-left: 5%;
+    }
+    .bolder{
+      font-size: 2em;
+      margin-top: 1em;
+    }
+    .small{
+      font-size: 1em;
+      margin-top: 0.5em;
+    }
+    .buttons{
+      margin-left: 5%;
+    }
+  }
+  
