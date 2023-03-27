@@ -90,10 +90,14 @@
   }
   .navbar-nav{
     gap: 20px;
+    transition: transform 1s ease-out;
   }
   .nav-link{
     color: #091E42 !important;
     font-family: 'clash_groteskregular';
+    transition: transform 1s ease-out;
+
+    
    }
 .nav-link:hover{
     color: #003E9C !important;
@@ -115,6 +119,7 @@ ul:hover{
     left: 0px;
     top: 1px;
     margin-top: -6em !important;
+    
     
 
     /* backdrop-filter: blur(100px); */
@@ -213,6 +218,8 @@ ul:hover{
     display: flex;
     flex-direction: row;
     gap: -5px;
+    transition: all 0.3s; 
+
 }
 .card{
     margin-left: 15em;
@@ -398,7 +405,7 @@ footer p{
 }
 .copy{
     border-top: 2px solid #243757;
-    margin-left: 25em;
+    margin-left: 20em;
     font-size: 10px;
     width: 100em;
     display: block;
