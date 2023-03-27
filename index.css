@@ -2,6 +2,16 @@
     background-image: url(Rectangle\ 10@2x.png);
     height: 41em;
 } */
+
+@font-face {
+    font-family: 'archivoextralight';
+    src: url('fonts/archivo-extralight-webfont.woff2') format('woff2'),
+         url('fonts/archivo-extralight-webfont.woff') format('woff');
+    font-weight: bold !important;
+    font-style: normal;
+
+}
+
 @font-face {
     font-family: 'archivobold';
     src: url('fonts/archivo-bold-webfont.woff2') format('woff2'),
@@ -142,7 +152,7 @@ ul:hover{
     font-weight: bold;
     line-height: 100%;
     margin-left: -4em;
-    font-family: 'archivosemibold';
+    font-family: 'archivoextralight' !important;
 }
 .buttons{
     display: flex;
@@ -324,14 +334,14 @@ font-family: 'clash_grotesksemibold';
     margin-left: -6em;
     color: #091E42;
     font-size: 20px;
-    font-family: clas;
+    font-family: 'archivoextralight';
 }
 
 
 .talk p{
     font-weight: 600;
     font-size: 17px;
-    font-family: 'archivosemibold';
+    font-family: 'archivoextralight';
 }
 
 form{
@@ -411,23 +421,41 @@ footer p{
     display: block;
     text-align: center;
 }
-@media (max-width: 768px) {
-    .navbar-brand{
-      margin-left: 5%;
+
+@media only screen and (max-width: 360px) {
+    .one{
+        margin-left: 0.1em;
+        width: 25em
     }
-    ul{
-      margin-left: 5%;
-    }
-    .bolder{
-      font-size: 2em;
-      margin-top: 1em;
-    }
-    .small{
-      font-size: 1em;
-      margin-top: 0.5em;
-    }
-    .buttons{
-      margin-left: 5%;
-    }
+  .bolder{
+    
+    font-size: 25px;
+    margin-left: -8em;
+
   }
-  
+  .small{
+    font-size: 14px;
+    margin-left:-14em
+  }
+  .head{
+    margin-left: -29em;
+}
+.buttons{
+    margin-left: 10em
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: -15em !important;
+    gap: 1px !important;
+    margin-left: 1.5em;
+}
+.mgt{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    margin-left: -15em;
+    margin-top: -35em !important;
+}
+}
