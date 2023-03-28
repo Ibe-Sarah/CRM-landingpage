@@ -225,10 +225,11 @@ ul:hover{
     margin-top: -23em !important;
 }
 #feat{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: -5px;
-    transition: all 0.3s; 
+    
 
 }
 .card{
@@ -422,40 +423,418 @@ footer p{
     text-align: center;
 }
 
+
+
+
+
 @media only screen and (max-width: 360px) {
-    .one{
-        margin-left: 0.1em;
-        width: 25em
+   
+.navbar-brand{
+    margin-left: 2em;
     }
-  .bolder{
+    ul{
+    margin-left: 0;
+    }
+    .head{
+    width: 100%;
+    height: auto;
+    }
+    .bolder{
+    font-size: 2em;
+    margin-left: 0;
+    }
+    .small{
+    font-size: 1em;
+    margin-left: 0;
+    }
+    .buttons{
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 7em;
+    }
+    .try-for-free{
+    margin-left: 0;
+    }
+    .one{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4em !important;
+    }
     
-    font-size: 25px;
-    margin-left: -8em;
-
-  }
-  .small{
-    font-size: 14px;
-    margin-left:-14em
-  }
-  .head{
-    margin-left: -29em;
-}
-.buttons{
-    margin-left: 10em
-}
-
-.grid{
-    display:grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin-left: -15em !important;
-    gap: 1px !important;
-    margin-left: 1.5em;
-}
-.mgt{
+#feat{
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    margin-left: -1em;
+    gap: 5px;
+    }
+    
+    .card{
+        margin-left: -2em;
+       
+}
+   
+#program{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.partner{
+    width: 100%;
+    max-width: 25em;
+    margin: 2em 0;
+}
+
+
+.growing{
+    display: flex;
+    flex-direction: column;
+    background-color: #7AC769;
+    border-radius: 24px;
+    height: auto;
+    width: 90%;
+    max-width: 350px;
+    margin: 2em auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h4{
+    font-size: 18px;
+    color: #091E42;
+    font-family: 'clash_grotesksemibold';
+    margin: 1em 0 0 0;
+}
+
+.try{
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    width: 126px;
+    height: 40px;
+    color: #7AC769;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'archivosemibold';
+    margin: 1em;
+}
+
+.see{
+    color: #E6F0FF;
+    background-color: #7AC769;
+    border: 2px solid #FFFFFF;
+    width: 126px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'archivosemibold';
+    margin: 1em;
+}
+#contact {
+    margin-left: 2em;
+    margin-top: 2em;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Adjust the width of the elements to fit the smaller screen size */
+  form, input, select {
+    width: 90%;
+  }
+  
+  /* Update the font sizes and margins for better readability on small screens */
+  .talk {
+    margin-left: -3em;
+    font-size: 16px;
+  }
+
+  .talk p {
+    font-size: 14px;
+    margin-bottom: 0.5em;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+  }
+  
+
+  footer{
+    background-color: #091E42;
+    width: 100%;
+    height: 298.46px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    
+  }
+footer img{
+    width: 25.56px;
+    height: 25.56px;
+    justify-self: space-around;
+
+}
+footer p{
+    justify-self: center;
+    margin-top: 3em;
+    margin-left: -35em;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 3em;
     margin-left: -15em;
-    margin-top: -35em !important;
 }
+.container li{
+    list-style: none;
+    font-weight: 'archivosemibold';
+    
 }
+
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-left: -15em;
+    margin-top: 3em;
+   
+}
+.subcontainer li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 'archivosemibold';
+}
+
+.copy{
+    border-top: 2px solid #243757;
+    margin: 3em auto;
+    font-size: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+
+  footer {
+    height: auto;
+    padding: 2em;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  footer p {
+    margin: 1em;
+    margin-left: 0;
+  }
+  
+  .container {
+    margin: 2em 0;
+    margin-left: 0;
+  }
+  
+  .subcontainer {
+    margin: 2em 0;
+    margin-left: 0;
+  }
+}
+
+
+@media only screen  and (width: 980px) {
+    .navbar-brand {
+    margin-left: 2em;
+    }
+    ul {
+    margin-left: 4em;
+    }
+    .head {
+    width: 100%;
+    height: auto;
+    }
+    .bolder {
+    font-size: 2.5em;
+    margin-left: 0;
+    }
+    .small {
+    font-size: 1.2em;
+    margin-left: 0;
+    }
+    .buttons {
+    margin-left: 5em;
+    }
+    .try-for-free{
+        margin-left: 0;
+        margin-top: 1em;
+        width: 40%;
+    }
+    .one{
+        width: 100%;
+        margin-left: -1em;
+        margin-top: 5em !important;
+    }
+  
+    .see-demo {
+        width: 40%;
+        margin-top: 1em;
+    }
+        #feat{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: -10em !important;
+    }
+
+
+    #program {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+        margin-left: 0;
+    }
+    .partner {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .growing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 2em;
+        margin: 0;
+        margin-top: 3em !important;
+      }
+    
+      h4 {
+        font-size: 1.8em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        text-align: center;
+      }
+    
+      .try, .see {
+        width: 40%;
+        margin-bottom: 1em;
+      }
+      #contact{
+        flex-direction: column;
+        margin: 4em auto 0;
+      }
+      .talk {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      form{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+      }
+      input, select{
+        width: 100%;
+      }
+
+      footer{
+        background-color: #091E42;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+      }
+      footer img{
+        width: 25.56px;
+        height: 25.56px;
+        justify-self: center;
+        margin: 1em;
+      }
+      footer p{
+        text-align: center;
+        margin: 1em 0;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        margin-top: 3em;
+      }
+      .container li{
+        list-style: none;
+        font-weight: bold;
+        text-align: center;
+      }
+      .subcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3em;
+        margin-top: 3em;
+      }
+      .subcontainer li{
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        text-align: center;
+      }
+      .copy{
+        border-top: 2px solid #243757;
+        margin-top: 2em;
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+    
+      footer {
+        margin-top: 5em;
+      }
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3em;
+      }
+      .subcontainer {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .container {
+        margin-left: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+      }
+      .container li {
+        margin-top: -2em;
+        margin-left: -3em;
+
+      }
+      .copy {
+        margin-left: auto;
+        margin-right: -30em;
+        width: auto;
+        text-align: center;
+      }
+    }
+        
+  
+    
+    
+    
+    
