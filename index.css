@@ -360,6 +360,21 @@ input, select{
     font-family: 'archivosemibold';
 
 }
+
+input[type="text"]:focus{
+    border: 2px solid red !important;
+}
+
+input[type="email"]:focus{
+    border: 2px solid red !important;
+}
+input[type=text]:focus, textarea:focus {
+    
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid #9A9A9A !important;
+  }
+
 label{
     margin-top: 0.4em;
 }
