@@ -125,9 +125,10 @@ ul:hover{
     background: #FCFCFC;
     /* position: absolute; */
     height: 830.43px;
-    width: 1512px;
+    width: 100%;
     left: 0px;
     top: 1px;
+    
     margin-top: -6em !important;
     
     
@@ -142,7 +143,9 @@ ul:hover{
     color: #091E42;
     line-height: 130%;
     margin-top: 2em !important;
-    margin-left: -2em;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: 'clash_grotesksemibold';
 }
 .small{
@@ -151,7 +154,9 @@ ul:hover{
     font-size: 1.5em;
     font-weight: bold;
     line-height: 100%;
-    margin-left: -4em;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: 'archivoextralight' !important;
 }
 .buttons{
@@ -160,7 +165,9 @@ ul:hover{
     gap: 1px;
     justify-content: center;
     align-content: space-between;
-    margin-left: 15em;
+    margin-left: auto;
+    margin-right: auto;
+
     Height:48px;
     Padding:8px, 24px, 8px, 24px;
     Gap:10px;
@@ -190,7 +197,7 @@ ul:hover{
     border-radius: 4px;
     height: 40px;
     width: 126px;
-    margin-left: -24em;
+    
     font-family: 'archivosemibold';
     margin-top: 2em;
     /* border: none !important; */
@@ -233,7 +240,7 @@ ul:hover{
 
 }
 .card{
-    margin-left: 15em;
+    margin-left: 15.5em;
     margin-top: 2em;
     
 }
@@ -278,7 +285,8 @@ h3{
     border-radius: 24px;
     height: 15em;
     width: 63em;
-    margin-left: 14em;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5em;
     justify-content: center;
     align-items: center;
@@ -332,7 +340,7 @@ font-family: 'clash_grotesksemibold';
     margin-top: 4em;
 }
 .talk {
-    margin-left: -6em;
+    margin-left: -7em;
     color: #091E42;
     font-size: 20px;
     font-family: 'archivoextralight';
@@ -342,7 +350,7 @@ font-family: 'clash_grotesksemibold';
 .talk p{
     font-weight: 600;
     font-size: 17px;
-    font-family: 'archivoextralight';
+    font-family: 'archivoextralight' !important;
 }
 
 form{
@@ -357,7 +365,7 @@ input, select{
     width: 28em;
     height: 2.3em;
     border: 2px solid #9A9A9A;
-    font-family: 'archivosemibold';
+    font-family: 'archivoextralight';
 
 }
 
@@ -380,7 +388,7 @@ label{
 }
 footer{
     background-color: #091E42;
-    width: 1512px;
+    width: 100%px;
     height: 298.46px;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -401,7 +409,7 @@ footer img{
 footer p{
     justify-self: center;
     margin-top: 3em;
-    margin-left: -35em;
+    margin-left: -39em;
     
 }
 .container{
@@ -413,7 +421,7 @@ footer p{
 }
 .container li{
     list-style: none;
-    font-weight: 'archivosemibold';
+    font-weight: 'archivoextralight';
     
 }
 .subcontainer{
@@ -427,11 +435,11 @@ footer p{
 .subcontainer li{
     text-decoration: none;
     list-style: none;
-    font-weight: 'archivosemibold';
+    font-weight: 'archivoextralight';
 }
 .copy{
     border-top: 2px solid #243757;
-    margin-left: 20em;
+    margin-left: 19em;
     font-size: 10px;
     width: 100em;
     display: block;
@@ -640,7 +648,7 @@ footer p{
 }
 .container li{
     list-style: none;
-    font-weight: 'archivosemibold';
+    font-weight: 'archivosextralight';
     
 }
 
@@ -655,7 +663,7 @@ footer p{
 .subcontainer li{
     text-decoration: none;
     list-style: none;
-    font-weight: 'archivosemibold';
+    font-weight: 'archivoextralight';
 }
 
 .copy{
