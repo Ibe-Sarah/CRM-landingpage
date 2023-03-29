@@ -340,7 +340,7 @@ font-family: 'clash_grotesksemibold';
     margin-top: 4em;
 }
 .talk {
-    margin-left: -7em;
+    margin-left: -8.5em;
     color: #091E42;
     font-size: 20px;
     font-family: 'archivoextralight';
@@ -409,7 +409,7 @@ footer img{
 footer p{
     justify-self: center;
     margin-top: 3em;
-    margin-left: -39em;
+    margin-left: -42em;
     
 }
 .container{
@@ -417,7 +417,7 @@ footer p{
     flex-direction: row;
     gap: 5em;
     margin-top: 3em;
-    margin-left: -45em;
+    margin-left: -48em;
 }
 .container li{
     list-style: none;
