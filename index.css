@@ -980,6 +980,7 @@ a:hover{
   width: 70em !important;
   height: 25em;
   border-radius: 10px;
+  z-index: 10000 !important;
 }
 
 
@@ -1037,5 +1038,55 @@ width: 30em;
 }
 label{
   font-size:1.3em
+}
+
+}
+
+
+
+@media (width:1920px){
+  .navbar-nav{
+display: flex;
+justify-content: space-around;
+text-align: center;  
+right: 40% !important;
+position: absolute;
+
+}
+
+#btn{
+  right: 8% !important;
+  position: absolute;
+  
+}
+
+#button1{
+  right: 8% !important;
+  position: absolute;
+  
+}
+
+
+.one{
+  right: 21%;
+  position: absolute;
+  z-index: 0 !important;
+}
+.copy{
+  padding-left: 45em !important;
+  position: absolute;
+}
+
+footer{
+  bottom: -40%;
+  position: absolute;
+}
+footer .copy{
+  padding-left: 30em;
+}
+
+#contact{
+  right: 25%;
+  position: absolute;
 }
 }

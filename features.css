@@ -1,0 +1,63 @@
+@media (width:1920px){
+    .navbar-nav{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;  
+  right: 40% !important;
+  position: absolute;
+  
+  }
+  
+  #button1{
+    right:8% !important;
+    position: absolute;
+    
+  }
+  
+  .one{
+    right: 21%;
+    position: absolute;
+    z-index: 0 !important;
+  }
+  .copy{
+    padding-left: 45em !important;
+    position: absolute;
+  }
+  
+  footer{
+    bottom: -330%;
+    position: absolute;
+  }
+  footer .copy{
+    padding-left: 30em;
+  }
+
+  #feat{
+    position: absolute;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .modal{
+    margin-left: 16em;
+  }
+
+  #comm{
+    bottom: -260%;
+    position: absolute;
+    width: 100%;
+  }
+  #program{
+    right:28%;
+    position: absolute;
+  }
+  
+  .growing{
+    bottom: -300%;
+    position: absolute;
+    right: 21%;
+  }
+  }
+  

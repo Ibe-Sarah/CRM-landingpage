@@ -1,0 +1,12 @@
+
+@media (width:1920px){
+
+
+footer{
+    bottom: -20%;
+    position: absolute;
+  }
+  footer .copy{
+    padding-left: 30em;
+  }
+}
