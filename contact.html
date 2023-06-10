@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <title>LANDING PAGE</title>
+</head>
+<body>
+
+
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12); height: 100px; margin-top:-1.5em;width: 100%
+  ;  " >
+        <img src="CRM128.png" class="navbar-brand" href="#" style="width: 7em;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav" >
+            <li class="nav-item active" style="transition: transform 1s ease-out;">
+              <a class="nav-link" style="" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" class="modal-content" href="features.html">FEATURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" class="modal-content" href="faqq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+          </ul>
+          
+           
+            <button id="button1" onclick ="window.location.href = 'contact.html';" class="outline-success my-2 my-sm-0" style="background-color: #5FBC4A; cursor: pointer; font-family:'clash_groteskregular';margin-top:-1em;color: #FFFFFF; border: none; border-radius: 4px; margin-left: 16em; height: 40px; width:159px;padding: 10px, 24px, 10px,24px;">TRY FOR FREE</button>
+          
+        </div>
+      </nav>
+
+    
+<section id="contact">
+  <img src="90716-contact.gif" style="width: 17em; height: 17em; margin-top: -2em; margin-left: -13em;">
+    <div class="talk">
+        <h2 style="font-size: 50px; font-family: 'clash_grotesksemibold';">Let's Talk</h2>
+        <p>Let's talk about how CRM 128 can transform <br>your business. Contact us today to schedule a<br> demo and discover how our software can revolutionize<br>s the way you work.
+        </p>
+    <h5 style="font-size: 30px; font-family: 'clash_grotesksemibold';">Socials</h5>
+    <p>Instagram Twitter Facebook</p>
+
+    </div>
+    <form action="mailto:csofficer@hanstechnology.biz">
+        <label for="name">Name</label>
+            <input id="name" type="text" name="'name"></input>
+        
+        <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+        
+   <label for="service">What services are you interested in?</label>
+   <div class = "dropdown" onclick = "showOptions()" ondblclick="getOptions()">
+    <select>
+      <option style="display: none; border: none;">Select an option</option>
+      
+    </select>
+    <div class="overSelect"></div>
+
+    </div>
+ <div id = "options">
+    <label for = "one">
+       <input type = "checkbox" id = "one" style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "First Option" />
+          <p>Select All</p>
+    </label>
+    <label for = "two">
+       <input type = "checkbox" id = "two" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Second Option" />
+          <p>Accounts Management</p>
+    </label>
+    <label for = "three">
+       <input type = "checkbox" id = "three"style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "Third Option" />
+          <p>Clients Management</p>
+    </label>
+    <label for = "four">
+       <input type = "checkbox" id = "four" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Fourth Option" />
+          <p>Human Resources Management</p>
+    </label>
+    <label for = "five">
+       <input type = "checkbox" id = "five" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+          <p>Project Management</p>
+    </label>
+
+    <label for = "six">
+      <input type = "checkbox" id = "six" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+         <p>Inventory Management</p>
+   </label>
+   <label for = "seven">
+    <input type = "checkbox" id = "seven" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+       <p>Appointments</p>
+ </label>
+
+
+ </div>
+ <div id = "output"> </div>
+ <!-- <button onclick = "getOptions()"> Get all Selected Checkboxes </button> -->
+      
+<label for="msg">Message</label>
+<textarea name="msg" rows="5" style="border-radius: xas ; border: 2px solid #9A9A9A
+;" cols="30"></textarea>
+<label></label>
+<button href="mailtocsofficer@hanstechnology.biz"  style="background-color: #0047B3; width: 7em; cursor: pointer; color: white; border: none; margin-top: 1em; padding-left:4em;padding-right:7em; border-radius: 5px; text-align: center; font-family: archivosemibold;">Send</input>
+    </form>
+</section>
+
+<section id="contact-desk">
+  <img src="90716-contact.gif" style="width: 17em; height: 17em; margin-top: -2em; margin-left: -13em;">
+
+    <div class="talk">
+        <h2 style="font-size: 50px; font-family: 'clash_grotesksemibold';">Let's Talk</h2>
+        <p>Let's talk about how CRM 128 can transform <br>your business. Contact us today to schedule a<br> demo and discover how our software can revolutionize<br>s the way you work.
+        </p>
+
+    </div>
+    <form action="mailto:csofficer@hanstechnology.biz">
+        <label for="name">Name</label>
+            <input id="name" type="text" name="'name"></input>
+        
+        <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+        
+   <label for="service">What services are you interested in?</label>
+   <div class = "dropdown" onclick = "showOptions()">
+    <select>
+      <option style="display: none; border: none;">Select an option</option>
+      
+    </select>
+    <div class="overSelect"></div>
+
+    </div>
+ <div id = "options">
+    <label for = "one">
+       <input type = "checkbox" id = "one" style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "First Option" />
+          <p>Select All</p>
+    </label>
+    <label for = "two">
+       <input type = "checkbox" id = "two" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Second Option" />
+          <p>Accounts Management</p>
+    </label>
+    <label for = "three">
+       <input type = "checkbox" id = "three"style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "Third Option" />
+          <p>Clients Management</p>
+    </label>
+    <label for = "four">
+       <input type = "checkbox" id = "four" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Fourth Option" />
+          <p>Human Resources Management</p>
+    </label>
+    <label for = "five">
+       <input type = "checkbox" id = "five" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+          <p>Project Management</p>
+    </label>
+
+    <label for = "six">
+      <input type = "checkbox" id = "six" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+         <p>Inventory Management</p>
+   </label>
+   <label for = "seven">
+    <input type = "checkbox" id = "seven" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
+       <p>Appointments</p>
+ </label>
+
+
+ </div>
+ <div id = "output"> </div>
+ <!-- <button onclick = "getOptions()"> Get all Selected Checkboxes </button> -->
+      
+<label for="msg">Message</label>
+<textarea name="msg" rows="5" style="border-radius: xas ; border: 2px solid #9A9A9A
+;" cols="30"></textarea>
+<label></label>
+<button href="mailtocsofficer@hanstechnology.biz"  style="background-color: #0047B3; width: 7em; cursor: pointer; color: white; border: none; margin-top: 1em; padding-left:4em;padding-right:7em; border-radius: 5px; text-align: center; font-family: archivosemibold;">Send</button>
+    </form>
+    <h5 style="font-size: 30px; font-family: 'clash_grotesksemibold';">Socials</h5>
+    
+      <ul>
+<a href="https://instagram.com/crm128_?igshid=NTc4MTIwNjQ2YQ=="><li>
+  Instagram 
+</li></a>
+<li>Twitter </li>
+<li>Facebook</li>
+      </ul>
+
+</section>
+
+<footer>
+    <!-- <p>LOGO</p>
+   <ul class="container">
+    <li>Product</li>
+    <li>Features</li>
+    <li>Contact</li></ul>
+    <ul class="subcontainer">
+     <li> <img src="1.png"></li>
+  <li> <img src="2.png"></li>
+<li> <img src="3.png"></li>
+    </ul> -->
+<!-- <img class="div" src="Line 63.png"></div> -->
+    <div class='copy'>© Copyright 2022, All Rights Reserved by GEN128
+    </div>
+
+</footer>
+
+
+<script>$(document).ready(function() {
+  // Add smooth scrolling to all navbar links
+  $("a.nav-link").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+let output = document.getElementById('output');
+  var showCheckBoxes = true;
+  const selectall= document.getElementById('one');
+
+  function showOptions() {
+     var options =
+        document.getElementById("options");
+
+     if (showCheckBoxes) {
+        options.style.display = "grid";
+        showCheckBoxes = !showCheckBoxes;
+     } else {
+        options.style.display = "none";
+        showCheckBoxes = !showCheckBoxes;
+     }
+  }
+  function getOptions() {
+     var selectedOptions = document.querySelectorAll('input[type=checkbox]:checked')
+    //  output.innerHTML = "The selected options are given below. <br/>";
+     for (var i = 0; i < selectedOptions.length; i++) {
+        output.innerHTML += selectedOptions[i].value + " , ";
+        console.log(selectedOptions[i])
+     }
+  }
+</script>
+<script>
+$(document).ready(function() {
+  $("#button1").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 1000, function() {
+      $("#contact").fadeIn("slow");
+    });
+  });
+
+  $("#button2").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 1000, function() {
+      $("#contact").fadeIn("slow");
+    });
+  });
+
+  $("#button3").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 1000, function() {
+      $("#contact").fadeIn("slow");
+    });
+  });
+
+  $("#button4").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 1000, function() {
+      $("#contact").fadeIn("slow");
+    });
+  });
+});
+
+
+</script>
+<script>
+ const animate =document.getElementById("button2");
+ animate
+</script>
+<script>
+var accordionHeaders = document.querySelectorAll('.accordion-header');
+var askedLength= document.getElementById("faq");
+
+accordionHeaders.forEach(function(header) {
+  header.addEventListener('click', function() {
+    var accordionContent = this.nextElementSibling;
+    if (accordionContent.style.display === 'block') {
+      accordionContent.style.display = 'none';
+      this.lastElementChild.classList.remove('accordion-icon-down');
+      this.lastElementChild.classList.add('accordion-icon-up');
+
+    } else {
+      accordionContent.style.display = 'block';
+      this.lastElementChild.classList.remove('accordion-icon-up');
+      this.lastElementChild.classList.add('accordion-icon-down');
+      askedLength.style.height= '85em';
+
+    }
+    
+  });
+  // const accordionItems = accordion.querySelectorAll('.accordion-item');
+  // const allClosed = Array.from(accordionItems).every(item => !item.classList.contains('active'));
+
+  // if (allClosed) {
+  //   const totalHeight = Array.from(accordionItems).reduce((acc, item) => acc + item.clientHeight, 0);
+  //   askedLength.style.height = `${totalHeight}px`;
+  // } else {
+  //   askedLength.style.height = 'auto';
+  // }
+
+});
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
