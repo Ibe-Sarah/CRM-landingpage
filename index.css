@@ -777,7 +777,7 @@ button.close{
   margin-left: auto;
   margin-right:auto;
   object-fit: cover;
-  bottom: -50px !important;
+  bottom: -30px !important;
   position: absolute;
 }
 
@@ -860,8 +860,8 @@ color:  #091E42 !important;
 }
 
 .growing h4{
-  font-size: 2.3em;
-  margin-left: 5.5em;
+  font-size: 2.1em;
+  margin-left: 5em;
   padding-right: 5em !important;
   font-weight: 600 !important;
   line-height: 100%;
@@ -909,6 +909,9 @@ padding-bottom: 2em;
 }
 .accordion-content{
   padding-top: 2em;
+  font-size: 1.3em;
+  padding-right: 0;
+  line-height: 130% !important;
 }
 #contact{
   display: none;
@@ -972,6 +975,20 @@ a:hover{
 }
 #contact-desk h5{
   margin-left: -4.3em;
+}
+
+/* select{
+font-size: 1.5em;
+width: 16em !important;
+-webkit-appearance:none !important; /* Safari and Chrome *
+
+} */
+#options{
+ margin-top: 27em !important;
+}
+
+.overSelect{
+  font-size: 1.5em !important;
 }
 #navbarSupportedContent {
   background-color: white;
