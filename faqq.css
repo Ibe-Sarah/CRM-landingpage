@@ -1,7 +1,9 @@
 
 @media (width:1920px){
 
-
+html,body{
+  overflow: hidden !important;
+}
 footer{
     bottom: -20%;
     position: absolute;

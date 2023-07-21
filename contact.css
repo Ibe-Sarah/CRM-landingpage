@@ -1,12 +1,55 @@
 
 @media (width:1920px){
 
-
+html,body{
+  overflow: hidden;
+}
     footer{
         bottom: -2%;
         position: absolute;
       }
       footer .copy{
         padding-left: 30em;
+      }
+    }
+
+    .dropdown {
+      /* position: relative; */
+      display: inline-block;
+    }
+  
+    .dropdown-content {
+      position: absolute;
+      z-index: 1;
+      background-color: #FFFFFF;
+      border: 1px solid #ccc;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+      width: 82%;
+    }
+  
+    .dropdown-content input[type="checkbox"] {
+      /* margin-right: 10px; */
+      width: 20px;
+      margin-top: 1em;
+    }
+  
+  
+    .dropdown-content label {
+      display: block;
+      /* padding: 5px 5px; */
+  
+      padding-bottom: 0em !important;
+      cursor: pointer;
+      padding: 0em !important;
+    }
+    @media screen and (max-width: 960px) {
+      .dropdown-content {
+        max-height: 200px;
+      }
+  
+      .dropdown-content label {
+        padding: 10px 15px;
       }
     }

@@ -135,49 +135,34 @@
             <input id="email" type="email" name="email">
         
    <label for="service">What services are you interested in?</label>
-   <div class = "dropdown" onclick = "showOptions()">
-    <select>
-      <option style="display: none; border: none;">Select an option</option>
-      
-    </select>
-    <div class="overSelect"></div>
-
+   
+   <div class="dropdown">
+    <select onclick="toggleDropdown()">Select options</select>
+    <div class="dropdown-content">
+      <label>
+        <input type="checkbox" id="select-all" onchange="selectAllCheckboxes(this)"> Select All
+      </label>
+      <label>
+        <input type="checkbox" style="margin-top: 1em;"> Accounts Management
+      </label>
+      <label style="margin-top: -0.5em;">
+        <input type="checkbox"> Clients Management
+      </label>
+      <label>
+        <input type="checkbox"> Human Resources Management
+      </label>
+      <label>
+        <input type="checkbox"> Project Management
+      </label>
+      <label>
+        <input type="checkbox"> Inventory Management
+      </label>
+      <label>
+        <input type="checkbox"> Appointments 
+      </label>
+     
     </div>
- <div id = "options">
-    <label for = "one">
-       <input type = "checkbox" id = "one" style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "First Option" />
-          <p>Select All</p>
-    </label>
-    <label for = "two">
-       <input type = "checkbox" id = "two" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Second Option" />
-          <p>Accounts Management</p>
-    </label>
-    <label for = "three">
-       <input type = "checkbox" id = "three"style="width: 1em; margin-left:1em; margin-top: 1em !important;" value = "Third Option" />
-          <p>Clients Management</p>
-    </label>
-    <label for = "four">
-       <input type = "checkbox" id = "four" style="width: 1em; margin-left:1em; margin-top: 1em !important;"value = "Fourth Option" />
-          <p>Human Resources Management</p>
-    </label>
-    <label for = "five">
-       <input type = "checkbox" id = "five" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
-          <p>Project Management</p>
-    </label>
-
-    <label for = "six">
-      <input type = "checkbox" id = "six" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
-         <p>Inventory Management</p>
-   </label>
-   <label for = "seven">
-    <input type = "checkbox" id = "seven" style="width: 1em; margin-left:1em; margin-top: 0.3em !important;"value = "Fifth Option" />
-       <p>Appointments</p>
- </label>
-
-
- </div>
- <div id = "output"> </div>
- <!-- <button onclick = "getOptions()"> Get all Selected Checkboxes </button> -->
+  </div> <!-- <button onclick = "getOptions()"> Get all Selected Checkboxes </button> -->
       
 <label for="msg">Message</label>
 <textarea name="msg" rows="5" style="border-radius: xas ; border: 2px solid #9A9A9A
@@ -214,7 +199,19 @@
 
 </footer>
 
+<script>
+  function toggleDropdown() {
+    const dropdownContent = document.querySelector('.dropdown-content');
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  }
 
+  function selectAllCheckboxes(checkbox) {
+      const checkboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]');
+      checkboxes.forEach((cb) => {
+        cb.checked = checkbox.checked;
+      });
+    }
+</script>
 <script>$(document).ready(function() {
   // Add smooth scrolling to all navbar links
   $("a.nav-link").on('click', function(event) {
